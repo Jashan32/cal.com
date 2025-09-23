@@ -1,9 +1,14 @@
+// Video meeting management
 export {
-  getRecordingsOfCalVideoByRoomName,
-  getDownloadLinkOfCalVideoByRecordingId,
-  getAllTranscriptsAccessLinkFromRoomName,
   createMeeting,
   updateMeeting,
   deleteMeeting,
   getBusyVideoTimes,
-} from "@calcom/features/conferencing";
+} from "@calcom/features/conferencing/lib/videoClient";
+
+// Recording and transcription services
+export {
+  getRecordingsOfCalVideoByRoomName,
+  getDownloadLinkOfCalVideoByRecordingId,
+  getAllTranscriptsAccessLinkFromRoomName,
+} from "@calcom/features/conferencing/lib/recordingService";

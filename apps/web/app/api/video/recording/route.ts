@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { getDownloadLinkOfCalVideoByRecordingId } from "@calcom/features/conferencing";
+import { getDownloadLinkOfCalVideoByRecordingId } from "@calcom/features/conferencing/lib/recordingService";
 import { verifyVideoToken } from "@calcom/lib/videoTokens";
 
 export async function GET(request: Request) {

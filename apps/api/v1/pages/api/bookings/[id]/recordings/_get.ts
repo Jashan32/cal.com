@@ -3,7 +3,7 @@ import type { NextApiRequest } from "next";
 import {
   getRecordingsOfCalVideoByRoomName,
   getDownloadLinkOfCalVideoByRecordingId,
-} from "@calcom/features/conferencing";
+} from "@calcom/features/conferencing/lib/recordingService";
 import { HttpError } from "@calcom/lib/http-error";
 import { defaultResponder } from "@calcom/lib/server/defaultResponder";
 import prisma from "@calcom/prisma";
