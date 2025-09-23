@@ -2,4 +2,8 @@ export {
   getRecordingsOfCalVideoByRoomName,
   getDownloadLinkOfCalVideoByRecordingId,
   getAllTranscriptsAccessLinkFromRoomName,
-} from "@calcom/app-store/videoClient";
+  createMeeting,
+  updateMeeting,
+  deleteMeeting,
+  getBusyVideoTimes,
+} from "@calcom/features/conferencing";

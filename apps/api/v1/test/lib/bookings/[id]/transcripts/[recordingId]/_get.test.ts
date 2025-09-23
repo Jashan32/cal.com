@@ -8,7 +8,7 @@ import { describe, expect, test, vi, afterEach } from "vitest";
 import {
   getTranscriptsAccessLinkFromRecordingId,
   checkIfRoomNameMatchesInRecording,
-} from "@calcom/app-store/videoClient";
+} from "@calcom/features/conferencing";
 import { buildBooking } from "@calcom/lib/test/builder";
 
 import { getAccessibleUsers } from "~/lib/utils/retrieveScopedAccessibleUsers";
@@ -19,7 +19,7 @@ import handler from "../../../../../../pages/api/bookings/[id]/transcripts/[reco
 type CustomNextApiRequest = NextApiRequest & Request;
 type CustomNextApiResponse = NextApiResponse & Response;
 
-vi.mock("@calcom/app-store/videoClient", () => {
+vi.mock("@calcom/features/conferencing", () => {
   return {
     getTranscriptsAccessLinkFromRecordingId: vi.fn(),
     checkIfRoomNameMatchesInRecording: vi.fn(),
